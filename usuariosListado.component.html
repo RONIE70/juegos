@@ -1,0 +1,46 @@
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+<div class="text">
+<h1>USUARIOS REGISTRADOS</h1>
+</div>
+<div class="container">
+  <div class="table">
+    <table>
+      <thead class="thead-dark">
+        <th scope="col">Nº</th>
+        <th scope="col">NOMBRE</th>
+        <th scope="col">MAIL</th>
+        <th scope="col">PASSWORD</th>
+      </thead>
+<ng-container>
+      <tbody>
+        <tr
+          *ngFor="
+            let usuario of usuarios;
+            let i = index;
+            let impar = odd;
+            let par = even
+          "
+          [ngClass]="{ azul: par, verde: impar }"
+        >
+          <td>
+            {{ i }}
+          </td>
+          <td>
+            {{ usuario["nombre"] }}
+          </td>
+          <td>
+            {{ usuario["mail"] }}
+          </td>
+          <td>
+            {{ usuario["password"] }}
+          </td>
+        </tr>
+      </tbody>
+    </ng-container>
+    </table>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

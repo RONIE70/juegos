@@ -1,0 +1,27 @@
+.azul {
+    background-color:rgb(168, 168, 219);
+    }
+    .verde {
+        background-color:rgb(186, 226, 141);
+    }
+
+    table{
+     text-align: center;
+
+    }
+    .container{
+        position: relative;
+        top: -920px;
+        display: flex;
+        left: 350px;
+    }
+    .text{
+        position: relative;
+        top: -906px;
+        display: flex;
+        left: 570px;
+        color: rgb(15, 7, 85);
+        -webkit-text-stroke: 2px rgb(248, 241, 241);
+        font-family: 'Bebas Neue', cursive;
+        font-size: 50pt;
+    }
