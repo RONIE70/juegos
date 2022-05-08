@@ -1,0 +1,24 @@
+.container {
+    position: relative;
+    top: 30px;
+}
+.metabola .fusion-text img, .metabola.fusion-text img {
+    display: block;
+    max-width: 36px;
+    max-height: 36px;
+    margin: 0px auto;
+    position: absolute;
+    top: 95px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    transition: all .3s;
+}
+
+.btn_btn-secondary {
+ background-color: rgb(7, 107, 121);
+ padding: 10PX;
+ border-radius: 5px;
+ color: bisque;
+}
