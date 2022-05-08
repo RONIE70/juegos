@@ -1,0 +1,70 @@
+body{
+    background-color: black;
+    height: 610px;
+    width: 400px;
+    position: relative;
+    left: 2px;
+    top: -55px;
+}
+.play{
+    position: relative;
+    top: 40px;
+    left: 40px;
+    
+}
+.text{
+    position: relative;
+    left: 40px;
+    color: aliceblue;
+}
+td{
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.table{
+    width: 180px;
+}
+.btn7 {
+    position: relative;
+    left:100px;
+    top:50px ;
+    border-radius: 50%;
+    border: 2px solid #d0d0c1;
+    background-color: rgb(223, 21, 21);
+    color: aliceblue;
+    font-family: 'Merriweather Sans', sans-serif;
+    padding: 10px; 
+    width: 105px;
+}
+.tantos{
+  position: relative;
+  left: 60px;
+  top: 60px;
+  font-family: 'Merriweather Sans', sans-serif;
+  color: aliceblue;
+}
+
+.btn10 {
+    position: relative;
+    left:130px;
+    top:230px ;
+    border-radius: 10px;
+    border: 2px solid #d0d0c1;
+    background-color: rgb(34, 21, 223);
+    color: aliceblue;
+    font-family: 'Merriweather Sans', sans-serif;
+    padding: 5px; 
+    width: 80px;
+}
+.btn11 {
+    position: relative;
+    left:130px;
+    top:230px ;
+    border-radius: 10px;
+    border: 2px solid #d0d0c1;
+    background-color: rgb(34, 21, 223);
+    color: aliceblue;
+    font-family: 'Merriweather Sans', sans-serif;
+    padding: 5px; 
+    width: 80px;
+}
