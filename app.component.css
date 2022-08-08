@@ -1,0 +1,15 @@
+.btn {
+    color: rgb(204, 204, 224);
+    background-color: rgb(158, 68, 218);
+
+}
+li.hover.btn{
+    background-color: azure;
+}
+.form-control{
+    background-color: rgb(82, 72, 72);
+}
+a{
+  height: 68px;
+}
+

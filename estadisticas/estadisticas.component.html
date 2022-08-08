@@ -1,0 +1,53 @@
+
+
+<br><br><br>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+<body>
+<div class="text">
+<h1>Estadísticas Jugadores</h1>
+</div>
+<div class="container" >
+  <div class="table1"  border = "1">
+    <table>
+      <tr>
+        <th>Intentos</th>
+        <th>Mail</th>
+        <th>Juego</th>
+
+      </tr>
+<ng-container>
+      <tbody>
+        <tr
+          *ngFor="
+            let score of this.scores;
+            let i = index;
+            let impar = odd;
+            let par = even
+          "
+          [ngClass]="{ azul: par, verde: impar }"
+        >
+
+        <td>{{ score.intentos }}</td>
+        <td>{{ score.mail }}</td>
+        <td>{{ score.juego }}</td>
+        </tr>
+      </tbody>
+    </ng-container>
+    </table>
+    <div class="wrapper">
+      <div class="wrapper2">
+        <div class="grid-item2">
+          <button class="btn" routerLink="../inicio">Menu</button>
+          </div></div></div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
+
+</body>
+

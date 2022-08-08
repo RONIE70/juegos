@@ -1,0 +1,109 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script> AOS.init();</script>
+
+<br><br><br><br>
+
+<body>
+  <div class="top_link">
+    <a href="bienvenido"><img
+        src="https://drive.google.com/u/0/uc?id=16U__U5dJdaTfNGobB_OpwAJ73vM50rPV&export=download"
+        alt="" /> Inicio</a>
+  </div>
+  <div data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="600">
+      <div id="main-wrapper" class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-10">
+                <div class="card border-0">
+                    <div class="card-body p-0">
+                        <div class="row no-gutters">
+                            <div class="col-lg-6">
+                                <div class="p-5">
+                                    <div class="mb-5">
+                                        <h3 class="h4 font-weight-bold text-theme">Login</h3>
+                                    </div>
+
+                                    <h6 class="h5 mb-0">Bienvenidx! {{miUsuario.nombre}}</h6>
+                                    <p class="text-muted mt-2 mb-5">Ingresa los datos que usaste para el registro</p>
+
+                                        <input type="name" [(ngModel)] = "miUsuario.nombre" placeholder="NOMBRE">
+                                        <input type="mail" [(ngModel)] = "miUsuario.mail" placeholder="MAIL">
+                                        <input type="password" [(ngModel)] = "miUsuario.password" placeholder="PASSWORD">
+                                        <button class="btn-send" type="submit"  (click)="validaLogin()">INGRESAR</button>
+                                        <button class="btn btn-info" type="submit"  (click)="onSetDefault()">Test</button>
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 d-none d-lg-inline-block">
+                                <div class="account-block rounded-right">
+                                    <div class="overlay rounded-right"></div>
+                                    <div class="account-testimonial">
+                                        <h4 class="text-white mb-4">¡¡GAME START</h4>
+                                        <p class="lead text-white">"Se una versión mejor de ti cada día, pero sin olvidar tus orígenes"</p>
+                                        <p>Creative Admin</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+                <p class="text-muted text-center mt-3 mb-0">No tenes usuario y/o cuenta? <a href="/registro" class="text-primary ml-1">registro</a></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+
+
+
+
+	<!--<section class="login">
+		<div class="login_box" >
+			<div class="left">
+				<div class="top_link m2"><a href="bienvenido"><img src="https://drive.google.com/u/0/uc?id=16U__U5dJdaTfNGobB_OpwAJ73vM50rPV&export=download" alt="">Inicio</a></div>
+				<div>
+					<div class="contact">
+						<div action="">
+							<h3>LOGIN</h3>
+				Hola,{{miUsuario.nombre}}
+				      <input type="name" [(ngModel)] = "miUsuario.nombre" placeholder="NOMBRE">
+						  <input type="mail" [(ngModel)] = "miUsuario.mail" placeholder="MAIL">
+							<input type="password" [(ngModel)] = "miUsuario.password" placeholder="PASSWORD">
+							<button class="submit" type="submit"  (click)="validaLogin()">INGRESAR</button>
+			  </div>
+				</div>
+
+          <div class="rem">
+            <div class="record">
+              <p>Recordarme</p>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" value="remember-me">
+          </div>
+          </div>
+
+				</div>
+			</div>
+			<div class="right">
+				<div class="right-text">
+					<h2>Scorpions</h2>
+					<h5>Contactate con el Futuro</h5>
+				</div>
+				<div class="right-inductor"><img src="https://lh3.googleusercontent.com/fife/ABSRlIoGiXn2r0SBm7bjFHea6iCUOyY0N2SrvhNUT-orJfyGNRSMO2vfqar3R-xs5Z4xbeqYwrEMq2FXKGXm-l_H6QAlwCBk9uceKBfG-FjacfftM0WM_aoUC_oxRSXXYspQE3tCMHGvMBlb2K1NAdU6qWv3VAQAPdCo8VwTgdnyWv08CmeZ8hX_6Ty8FzetXYKnfXb0CTEFQOVF4p3R58LksVUd73FU6564OsrJt918LPEwqIPAPQ4dMgiH73sgLXnDndUDCdLSDHMSirr4uUaqbiWQq-X1SNdkh-3jzjhW4keeNt1TgQHSrzW3maYO3ryueQzYoMEhts8MP8HH5gs2NkCar9cr_guunglU7Zqaede4cLFhsCZWBLVHY4cKHgk8SzfH_0Rn3St2AQen9MaiT38L5QXsaq6zFMuGiT8M2Md50eS0JdRTdlWLJApbgAUqI3zltUXce-MaCrDtp_UiI6x3IR4fEZiCo0XDyoAesFjXZg9cIuSsLTiKkSAGzzledJU3crgSHjAIycQN2PH2_dBIa3ibAJLphqq6zLh0qiQn_dHh83ru2y7MgxRU85ithgjdIk3PgplREbW9_PLv5j9juYc1WXFNW9ML80UlTaC9D2rP3i80zESJJY56faKsA5GVCIFiUtc3EewSM_C0bkJSMiobIWiXFz7pMcadgZlweUdjBcjvaepHBe8wou0ZtDM9TKom0hs_nx_AKy0dnXGNWI1qftTjAg=w1920-h979-ft" alt=""></div>
+      </div> </div>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/?hl=es"><img src="https://as01.epimg.net/meristation/imagenes/2021/12/07/betech/1638901988_477224_1638902093_noticia_normal_recorte1.jpg" class="social-login__icon fab fa-instagram"></a>
+          <a href="https://facebook.com" ><img src="https://www.kindpng.com/picc/m/480-4801557_vector-facebook-png-icon-transparent-png.png" class="social-login__icon fab fa-facebook"></a>
+
+        </div>
+
+	</section>-->

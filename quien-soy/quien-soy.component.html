@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://bootswatch.com/4/materia/boostrap.css">
+<link rel="stylesheet" href="https://use.fontawesone.com/realeases/v5.6.3/css/all.css"
+integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+crossorigin="anonymous">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script> AOS.init();</script>
+
+
+
+<div data-aos="flip-down">
+<div class="padding">
+  <div class="col-md-10">
+      <!-- Column -->
+      <div class="card"> <img class="card-img-top" src="https://i.imgur.com/K7A78We.jpg" alt="Card image cap">
+          <div class="card-body little-profile text-center">
+              <div class="misi">
+                  <p>Misión, Visión y Valores</p>
+              </div>
+              <div class="contacto">
+                <div><p>github:Ronie70</p></div>
+                <div><p>heroku:@Ronie70</p></div>
+                <div><p>ing:@graficascorpions</p></div>
+                <div><p>paularonie70@gmail.com</p></div>
+             </div>
+ <div class="grid-item3">
+    <button class="btn" routerLink="../inicio">Menu</button>
+  </div>
+
+  <div class="container">
+
+    <app-user [user]="user"></app-user>
+    <app-notfound *ngIf="error"></app-notfound>
+  </div>
+</div>
+</div>

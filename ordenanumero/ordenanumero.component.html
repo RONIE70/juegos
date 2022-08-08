@@ -1,0 +1,16 @@
+
+<br><br><br><br>
+<div class="container">
+  <h1>​​​​👍🏻​​​​​👍🏻​​​​​👍🏻​ ¡¡¡Ordenemos los números!!! ​​​​👍🏻​​​​​👍🏻​​​​​👍🏻​</h1>
+  <div class="numbers-container">
+    <div class="button-container" *ngFor="let numero of arrayRandomNum">
+      <button type="button" (click)="clickMe(numero)">{{ numero }}</button>
+    </div>
+  </div>
+  <div class="message succes-message" *ngIf="mensajeVictoria">
+    <p>{{ mensajeUsuario }}</p>
+  </div>
+  <div class="message error-message" *ngIf="mensajeError">
+    <p>{{ mensajeUsuario }}</p>
+  </div>
+</div>

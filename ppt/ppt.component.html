@@ -1,0 +1,41 @@
+
+<div *ngIf="mostrarJuego">
+  <br><br><br>
+<div class="title">
+  PIEDRA • PAPEL • TIJERA
+</div>
+
+<body>
+    <div class="score-board">
+      <div id="user-label" class="badge">Player</div>
+      <div id="comp-label" class="badge">PcBot</div>
+      <span id="user-score">{{ puntosUsuarios }}</span>:<span id="comp-score">{{ puntosCompu }}</span>
+    </div>
+    <p class="info-game">{{resultado}}</p>
+
+    <div  *ngIf="terminaJuego">
+    <div class="choices">
+        <div class="choice" (click)="play('piedra')">
+          <img src="/assets/piedra.png" />
+        </div>
+        <div class="choice" (click)="play('papel')">
+          <img src="/assets/papel.png" />
+        </div>
+        <div class="choice" (click)="play('tijera')">
+          <img src="/assets/tijera.png" />
+        </div>
+      </div>
+    <p class="info-game">Selecciona tu jugada</p>
+  </div>
+    <div id="volver" *ngIf="ocultaBoton">
+      <div >
+      <button type="button" class="btn btn-info" (click)="volverJugar()">Volver a jugar</button>
+      </div>
+     <div id="inciobtn">
+      <button class="btn btn-primary" type="button" routerLink="../inicio" >Salir</button>
+     </div>
+    </div>
+
+  </body>
+</div>
+

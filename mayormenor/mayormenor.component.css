@@ -1,0 +1,47 @@
+* {
+  font-family: Lato;
+}
+
+button {
+  background: hotpink;
+  border: 3px solid black;
+  border-radius: 15rem;
+  font-size: 1.5rem;
+  height: 7rem;
+  width: 5rem;
+  box-shadow: 2px 2px 10px 0px gray;
+  margin: 1rem;
+  outline: none;
+  cursor: pointer;
+  transition: box-shadown 2s;
+}
+
+button:hover {
+  background: #ff409f;
+}
+
+button:active {
+  box-shadow: inset 2px 2px 10px 0px black;
+}
+
+body{
+  background-color: black;
+  height: 550px;
+}
+.contiene{
+  position: relative;
+  top: 60px;
+  left: 400px;
+}
+.btn-secondary{
+  position: relative;
+  top: 100px;
+  left: 500px;
+}
+h1,label{
+  color: beige;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.score{
+  width: 400px;
+}

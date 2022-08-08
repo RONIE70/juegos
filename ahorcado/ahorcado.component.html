@@ -1,0 +1,70 @@
+
+<body>
+  <br>
+  <div class="contenedor" *ngIf="!salida">
+    <div>
+      <h1>¡Encontrá la palabra oculta!</h1>
+      <div class="row">
+        <div class="letra">
+          <div class="col-12">
+            &nbsp;
+            <span *ngFor="let esp of espacios">
+
+              <span *ngIf="contiene(esp)"> {{ esp }} &nbsp; </span>
+              <span *ngIf="!contiene(esp)"> _ &nbsp; </span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="pedidas">
+        <input type="text" max="1" (keyup)="validar()" [(ngModel)]="letra" [disabled]="this.contador==6 || gano"/>
+      </div>
+      <div class="norepita">
+        {{ this.letrasElegidas }}
+      </div>
+      <div id="volver" *ngIf="ocultaBoton">
+        <div>
+          <button type="button" class="btn btn-primary" (click)="volverJuego()">
+            Volver a jugar
+          </button>
+        </div>
+        <div>
+          <button class="btn btn-primary" type="button" routerLink="../inicio">
+            Salir
+          </button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <span *ngIf="this.contador == 0">
+        <img src="./assets/base.jpeg" width="260"/>
+      </span>
+      <span *ngIf="this.contador == 1">
+        <img src="./assets/cabeza.jpeg" width="260" />
+      </span>
+      <span *ngIf="this.contador == 2">
+        <img src="./assets/cuerpo.jpeg" width="260" />
+      </span>
+      <span *ngIf="this.contador == 3">
+        <img src="./assets/brazoi.jpeg" width="260"/>
+      </span>
+      <span *ngIf="this.contador == 4">
+        <img src="./assets/brazod.jpeg" width="260"/>
+      </span>
+      <span *ngIf="this.contador == 5">
+        <img src="./assets/piernai.jpeg" width="260"/>
+      </span>
+      <span *ngIf="this.contador == 6">
+        <img src="./assets/piernad.jpeg" width="260"/>
+
+        <label>Final! vuelve a intentarlo</label><br>
+        <label>tu palabra era...{{this.palabra}}</label>
+      </span>
+     <div class="gano">
+       <span *ngIf="gano">
+           <p>ganaste!!!</p>
+       </span>
+     </div>
+    </div>
+  </div>
+</body>

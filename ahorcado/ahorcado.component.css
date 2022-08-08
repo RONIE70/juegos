@@ -1,0 +1,57 @@
+p
+{
+    display: inline-block;
+}
+
+body{
+  position: relative;
+  top: 80px;
+  background-color: rgb(210, 30, 30);
+
+  height: 490px;
+}
+span{
+  font-size: larger;
+}
+h1{
+color:white;
+text-align:center;
+}
+.letra{
+  color: bisque;
+  text-align: center;
+  font-size: 40px;
+}
+.pedidas input{
+  position: relative;
+  left: 300px;
+  top: 50px;
+  max-width: 50px;
+  width: 50%;
+}
+.norepita{
+  color: bisque;
+  position: relative;
+  left: 300px;
+  font-size: 40px;
+  top: 60px;
+  width: 100%;
+  max-width: 300px;
+}
+.contenedor{
+  display: flex;
+  justify-content: space-around;
+}
+#volver{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  left: 100px;
+  top: 200px;
+}
+.gano{
+  color: bisque;
+  font-size: 20px;
+  position: relative;
+  left: 400px;
+}

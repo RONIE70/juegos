@@ -1,0 +1,46 @@
+body{
+    background-color:black;
+    font-family: "Press Start 2P";
+    color: beige;
+}
+h1,h2{
+  text-align: center;
+}
+.tablero{
+  margin: auto;
+  width: 550px;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tablero button{
+  width: 180px;
+  height: 150px;
+  max-width: 33.33%;
+  font-size: 10em;
+}
+#textoVictoria{
+  visibility: hidden;
+  color: blueviolet;
+}
+
+.container{
+  background-color: brown;
+  height: 60px;
+  width: 150px;
+}
+.conteiner{
+  width: 250px;
+  height:300px;
+  display: grip;
+  grid-template-columns: 33%;
+  background-color: darkcyan;
+}
+.tamanioboton{
+  width: 200px;
+  max-width: 50%;
+  height:100% ;
+}
+#texttab{
+  font-size:7rem;
+}

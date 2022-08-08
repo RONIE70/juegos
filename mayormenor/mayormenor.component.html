@@ -1,0 +1,30 @@
+<br><br><br>
+<body>
+
+<div class="contiene" *ngIf="mostrarJuego">
+  <label>
+    Tiempo:
+  </label>
+  <label>
+    {{timerGame || 0}}s
+  </label>
+
+
+  <h1>¿Cuál es mayor? 🙌</h1>
+
+  <button (click)="isGreater(leftNumber, rightNumber)">{{leftNumber}}</button>
+  <button (click)="isGreater(rightNumber, leftNumber)">{{rightNumber}}</button>
+
+  <div class="score">
+    <h1>Score:</h1>
+    <h2>{{score}}</h2>
+  </div>
+</div>
+
+<div class="btn btn-secondary" *ngIf='showBtnStart'>
+  <button (click)="startGame()">Iniciar Juego</button>
+</div>
+<div *ngIf='btnSalir'>                    <!---->
+  <button class="btn8"  routerLink="../inicio">Salir</button>
+</div>
+</body>

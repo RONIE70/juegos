@@ -1,0 +1,55 @@
+.azul {
+    background-color:rgb(168, 168, 219);
+    }
+    .verde {
+        background-color:rgb(201, 231, 229);
+    }
+
+    .table1 table{
+    text-align: center;
+    position: relative;
+    left: 240px;
+    }
+    .table1 thead{
+      color: azure;
+      background-color: rgb(57, 53, 53);
+      height: 32px;
+
+    }
+    .container{
+        position: relative;
+        top: -920px;
+        display: flex;
+        left: 270px;
+    }
+    .text{
+        position: relative;
+        top: -906px;
+        display: flex;
+        left: 688px;
+        color: rgb(208, 205, 232);
+        -webkit-text-stroke: 0.5px rgb(59, 17, 199);
+        font-family: 'Bebas Neue', cursive;
+
+    }
+    #table2 thead{
+      color: azure;
+      background-color: rgb(57, 53, 53);
+      height: 32px;
+
+    }
+    #table2 table{
+      text-align: center;
+      border-collapse: separate;
+      border-spacing:  1px 2px;
+    }
+    .text2{
+      position: relative;
+      top: -906px;
+      display: flex;
+      left: 700px;
+      color: rgb(208, 205, 232);
+      -webkit-text-stroke: 0.5px rgb(59, 17, 199);
+      font-family: 'Bebas Neue', cursive;
+
+  }

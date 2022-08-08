@@ -1,0 +1,55 @@
+
+<br><br><br><br>
+<div class="scoreScreen">
+	<label>
+    Score:
+  </label>
+  <label>
+    {{scoreGame || 0}}
+  </label>
+	<label>
+    / Timer:
+  </label>
+  <label>
+    {{timerGame || 0}}s
+  </label>
+</div>
+
+<div class="fatherScreen">
+  <div class="childScreen" *ngIf='showBtnStart'>
+    <button (click)="startGame()">Iniciar Juego</button>
+  </div>
+
+  <div class="childScreen" *ngIf='countDownEmoji > -1 && !showBtnStart'>
+    <label class='emoji'>
+      {{emojiArray[emojiIndex]}}
+    </label>
+    <br />
+    <label>
+      Tendrás {{countDownEmoji}}s para recordar este emoji
+    </label>
+  </div>
+
+  <div *ngIf='emojiAskIndex >= 0 && !youWin'>
+    <label class='emoji'>
+      {{emojiArray[emojiAskIndex]}}
+    </label>
+    <label>
+      ¿este es tu emoji?
+    </label>
+    <br />
+    <button class="childScreen" (click)="compareAnswer('SI')">Si</button>
+    <button class="childScreen" (click)="compareAnswer('NO')">No</button>
+  </div>
+
+  <div *ngIf='youWin'>
+    <label class=' youWinText'>
+      ¡Lo lograste!
+    </label>
+    <br />
+    <img *ngIf='catURL' [src]="catURL" alt="Image Cat" />
+  </div>
+</div>
+<div class="grid-item3">
+  <button class="btn" routerLink="../inicio">Menu</button>
+</div>

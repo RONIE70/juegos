@@ -1,0 +1,129 @@
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+<div>
+  <div class="text">
+  <h3>USUARIOS REGISTRADOS</h3>
+  </div>
+  <div class="container">
+    <div class="table1">
+      <table>
+        <thead class="thead-dark">
+          <th scope="col">Nº</th>
+          <th scope="col">NOMBRE</th>
+          <th scope="col">MAIL</th>
+          <th scope="col">PASSWORD</th>
+        </thead>
+
+        <tbody>
+          <tr
+            *ngFor="
+              let usuario of usuarios;
+              let i = index;
+              let impar = odd;
+              let par = even
+            "
+            [ngClass]="{ azul: par, verde: impar }"
+          >
+            <td>
+              {{ i }}
+            </td>
+            <td>
+              {{ usuario["nombre"] }}
+            </td>
+            <td>
+              {{ usuario["mail"] }}
+            </td>
+            <td>
+              {{ usuario["password"] }}
+            </td>
+
+            </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+  <div class="text2">
+
+    <h3>SUSCRIPCIONES ACTIVAS</h3>
+    </div>
+  <div class="container">
+    <div id="table2">
+      <table>
+        <thead class="thead-dark">
+          <th scope="col">USUARIO/MAIL</th>
+          <th scope="col">PACK</th>
+          <th scope="col">TATETI</th>
+          <th scope="col">P/P/T</th>
+          <th scope="col">ADIVINA</th>
+          <th scope="col">AHORCADO</th>
+          <th scope="col">QUE EMOJI</th>
+          <th scope="col">MAYOR MENOR</th>
+          <th scope="col">ORDENA NUMERO</th>
+        </thead>
+  <ng-container>
+        <tbody>
+          <tr
+          *ngFor="
+          let suscripcion of listaSuscripciones;
+              let i = index;
+              let impar = odd;
+              let par = even
+            "
+            [ngClass]="{ azul: par, verde: impar }"
+          >
+          <td>
+
+            {{suscripcion.mail}}
+          </td>
+            <td>
+              {{suscripcion.pack}}
+            </td>
+            <td>
+              <svg *ngIf="suscripcion.tateti==1" style="color: rgb(50, 11, 128);" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+              </svg>
+            </td>
+            <td>
+              <svg *ngIf="suscripcion.ppt==1" style="color: rgb(50, 11, 128);" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+              </svg>
+            </td>
+            <td>
+              <svg *ngIf="suscripcion.adivina==1" style="color: rgb(50, 11, 128);" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+              </svg>
+            </td>
+            <td>
+              <svg *ngIf="suscripcion.ahorcado==1" style="color: rgb(50, 11, 128);" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+              </svg>
+            </td>
+            <td>
+              <svg *ngIf="suscripcion.queemoji==1" style="color: rgb(50, 11, 128);" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+              </svg>
+            </td>
+            <td>
+              <svg *ngIf="suscripcion.ordenaNum==1" style="color: rgb(50, 11, 128);" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+              </svg>
+            </td>
+            <td>
+              <svg *ngIf="suscripcion.mayorMenor==1" style="color: rgb(50, 11, 128);" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+              </svg>
+            </td>
+            </tr>
+        </tbody>
+      </ng-container>
+      </table>
+    </div>
+  </div>
+</div>
+

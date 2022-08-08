@@ -1,0 +1,73 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+
+  <div class="fondo" style="background-image: url('https://images.squarespace-cdn.com/content/v1/5573469fe4b0061829d437e6/1525866650050-83D4VIERJ2WMS57GNRJ0/original.jpg?format=1000w')">
+    <div class="wrapper">
+    <div class="text">
+<p> Descubre el numero que penso el bot </p>
+</div>
+
+<div *ngIf="mostrarJuego">
+<div class="form">
+  <div class="padding">
+    <div>
+      <input
+      type="number"
+      min="1"
+      max="100"
+      [(ngModel)]="num"
+      placeholder="1 al 100"
+    >
+    </div>
+
+    <div>
+    <div class="num">
+    <!--<p>El número secreto es {{ mayorMenor }} {{ num }}</p>-->
+    <div class="txtnum">
+      <p *ngIf="mayorMenor && contador >0 && !igualNum">Su numero es mayor al secreto</p>
+      <p *ngIf="!mayorMenor && contador >0 && !igualNum">Su numero es menor al secreto</p>
+     </div>
+   <div class="contador">
+    <p *ngIf="igualNum">Has adivinado el numero secreto</p>
+    <p *ngIf="igualNum && contador >5  && contador !==1"> {{contador}} intentos Puedes mejorar! </p>
+    <p *ngIf="igualNum && contador ==1 "> {{contador}} intento  Eres crack!! </p>
+    <p *ngIf="igualNum && contador <=5 && contador !==0"> {{contador}} intentos Eres bueno! </p>
+
+
+  </div>
+    <button class="btn" type="submit" (click)="compruebaNumero()">Adivina</button>
+  </div>
+</div>
+  </div>
+</div>
+</div>
+
+<div>
+  <button class="btn7" type="submit" (click)="menuJuego()">Volver a Jugar</button>
+</div>
+<div>                    <!---->
+  <button class="btn8"  routerLink="../inicio">Salir</button>
+</div>
+
+
+<div class="grid">
+  <div *ngIf="ocultaBoton">
+<div>
+  <button class="btn5" type="submit"  (click)="iniciaJuego()">Inicio</button>
+</div>
+<!--<div>
+  <button class="btn6"  routerLink="../../inicio">Salir</button>
+</div>-->
+</div>
+</div>
+<div class="score">
+<app-highScores></app-highScores>
+<!--<p>{{datoHijo}}</p>  (cambio)="funCambiar($event)"  -->
+</div>
+</div>
+  </div>

@@ -1,0 +1,157 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: Raleway, sans-serif;
+}
+
+body {
+  position: relative;
+  top: 15px;
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+  background: linear-gradient(90deg, #C7C5F4, #776BCC);
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: darkgrey;
+  position: relative;
+  top: 15px;
+  left: 120px;
+}
+
+.login {
+	width: 390px;
+	padding: 30px;
+	padding-top: 156px;
+}
+
+.login__field {
+	padding: 20px 0px;
+	position: relative;
+}
+
+
+
+.login__input {
+	border: none;
+	border-bottom: 2px solid #9f9fc7;
+	background: none;
+	padding: 10px;
+	padding-left: 24px;
+	font-weight: 700;
+	width: 75%;
+	transition: .2s;
+}
+
+.login__input:active,
+.login__input:focus,
+.login__input:hover {
+	outline: none;
+	border-bottom-color: #6A679E;
+}
+
+.login__submit {
+	background: #fff;
+	font-size: 14px;
+	margin-top: 30px;
+	padding: 16px 20px;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	width: 100%;
+
+	box-shadow: 0px 2px 2px #5C5696;
+	cursor: pointer;
+	transition: .2s;
+}
+
+
+.button__icon {
+	font-size: 24px;
+	margin-left: auto;
+	color: #7875B5;
+}
+
+
+img{
+	width: 70%;
+}
+.img2{
+  position: relative;
+  left: 400px;
+  z-index: 1;
+  top: 20px;
+  width: 2550px;
+}
+.login {
+    height: 1300px;
+    width: 100%;
+    background: radial-gradient(#a189b3, #332042);
+    position: relative;
+}
+.login_box {
+    width: 950px;
+    height: 740px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgb(202, 110, 230);
+    border-radius: 10px;
+    box-shadow: 1px 4px 22px -8px #0004;
+    display: flex;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+.top_link  {
+  position: relative;
+  left: 23px;
+  width: 50px;
+  padding-right: 7px;
+  margin-top: -700px;
+}
+
+.action{
+  position: relative;
+  top: 0px;
+  left: -130px;
+}
+
+.container {
+  position: relative;
+  top: 10px;
+  max-width: 600px;
+  padding: 60px;
+  -webkit-box-shadow: 1px 1px 31px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 1px 31px -5px rgba(0,0,0,0.75);
+  box-shadow: 1px 1px 31px -5px rgba(0,0,0,0.75);
+}
+
+.formulario div[class^="col-md-"] {
+  height: 90px;
+  width: 480px ;
+}
+
+.invalid {
+  color: red;
+}
